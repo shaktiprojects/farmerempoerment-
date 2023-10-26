@@ -1,0 +1,45 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.main{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 55px;
+    color: cadetblue;
+}
+.secright{
+
+     height: 500px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     max-width: 80%;
+     margin: auto;
+} 
+
+.secleft{
+
+    height: 131px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 97%;
+    margin: auto;
+    flex-direction: row-reverse;
+} 
+.imgfluid{
+    height: 241px;
+}
+.paras{
+    padding: 0 65px;
+}
+.sectiontag {
+    font-size: 55px;
+    color: chocolate;
+}
+.sectionsubtag{
+    color:green;
+}

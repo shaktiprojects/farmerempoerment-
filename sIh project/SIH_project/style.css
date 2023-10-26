@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --navbar-height: 59px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/*navigation bar: logo and Image*/
+#logo {
+    margin: -6px 8px;
+}
+
+#logo img {
+    height: 88px;
+    margin: 3px 6px;
+}
+
+#navbar ul {
+    display: flex;
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: maroon;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.4rem;
+}
+
+#navbar ul li a {
+    color: darkmagenta;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-style: oblique;
+}
+
+#navbar ul li a:hover {
+    color: hotpink;
+    background-color: cyan;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.dropdoun_menu_1 {
+    display: none;
+}
+
+#navbar ul li:hover .dropdoun_menu_1
+{
+    display:block;
+    position: absolute;
+    background-color: transparent;
+    margin-top: 15px;
+    margin-left: -15px;
+    cursor: pointer;
+    
+}
+
+#navbar ul li:hover .dropdoun_menu_1 ul{
+    display: block;
+    margin: 10px;
+}
+
+#navbar ul li:hover .dropdoun_menu_1 ul li{
+    width: 200px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0px;
+    text-align: left;
+    cursor: pointer;
+}
+
+#navbar ul li:hover .dropdoun_menu_1 ul li:last-child{
+    border-bottom: none;
+}
+
+
+/*singuu singin*/
+
+/* Home style */
+#Home {
+    display: flex;
+    flex-direction: column;
+    padding: 190px 137px;
+    align-items: center;
+    justify-content: center;
+    height: 368px;
+
+}
+
+#Home::before {
+    content: "";
+    background: url('logo51.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 89%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#Home h1 {
+    color: royalblue;
+    text-align: center;
+}
+
+#Home p {
+    color: black;
+    text-align: center;
+    font-family: 'Palanquin Dark', sans-serif;
+
+
+}
+
+.h-primary {
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+.h-secondary {
+    font-size: 0.8rem;
+    padding: 12px;
+}
+
+.btnB {
+    padding: 5px 9px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 16px;
+    font-size: -0.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* added */
+.new{
+    color: #fff;
+    text-decoration: none;
+}
+
+.center {
+    text-align: center;
+}
+
+#services {
+    margin: 11px 252px;
+    display: flex;
+    padding: 4px 5px;
+
+}
+
+#services .box {
+    border: none;
+
+
+}
+
+#services .box img {
+    height: 150px;
+    margin: auto;
+    display: block;
+}
+
+#services .box1 img {
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+
+.btn1 {
+    padding: 5px 9px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 8px 54px;
+    font-size: -0.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.btn2 {
+    padding: 5px 9px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 8px 54px;
+    font-size: -0.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn3 {
+    padding: 5px 9px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    font-size: -0.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 54px;
+}
+
+.btn4 {
+    padding: 5px 9px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 8px 54px;
+    font-size: -0.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn5 {
+    padding: 5px 9px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    font-size: -0.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 54px;
+}
+
+
+
+
+/* footer design */
+
+footer {
+    margin-top: 24%;
+    left: 0;
+    right: 0;
+    background: maroon;
+    height: auto;
+    width: 100vw;
+    font-style: "open sans";
+    padding-top: 48px;
+    color: #fff;
+
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 2.3rem;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+    margin: 0 27px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a i {
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.socials a:hover i {
+    color: aqua;
+}
+
+.footer-bottom {
+    background: #000;
+    width: 100ev;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
